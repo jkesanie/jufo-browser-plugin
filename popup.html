@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JUFO portal search</title>
+  <style>
+    .main {
+      min-height: 100px;
+      min-width: 200px;
+      /*
+      display: grid;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      */
+      /*gap: 1ch; 
+      background-color: lightseagreen;
+      */
+    }
+
+    #selected {
+        font-weight: bold;
+    }
+    #error {
+        color: red;
+    }
+    img {
+        padding: 20px;
+        width: 30px;
+    }
+    .hide {
+        display: none;
+    }
+    #results {
+        margin-top: 10px;        
+    }
+    #source {       
+        margin-top: 10px; 
+        font-size: smaller;
+    }
+  </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="header">Highlighted text:</div>
+        <div id="selected"></div>
+        <img id="spinner" src="spinner.gif"/>
+        <div id="results" class="hide">
+            <div class="header">Results:</div>
+            <div id="name"></div>
+            <div id="level"></div>
+            <div id="link"></div>
+              
+            <div id="source">Source: <a target="_blank" href="https://jfp.csc.fi">JUFO portal</a></div>
+        </div>
+        <div id="error"></div>  
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
