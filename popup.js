@@ -10,7 +10,7 @@ async function renderResults(jufoID) {
             var name = detailJson[0]['Name']
             document.getElementById('name').innerText = name
             document.getElementById('level').innerText = 'Level ' + level
-            document.getElementById('link').innerHTML = '<a target="_blank" href="https://jfp.csc.fi/#!PublicationInformationView/id/' + jufoID + '">Open in JUFO portal</a>'
+            document.getElementById('link').innerHTML = '<a target="_blank" href="https://jfp.csc.fi/jufoportaali?Jufo_ID=' + jufoID + '">Open in JUFO portal</a>'
         }
         else {
             document.getElementById('error').innerText = 'Could not retrived data for channel ' + jufoID  
